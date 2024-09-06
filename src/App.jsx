@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from "./components/Hero";
 import About from "./components/About";
 import HomeSearch from "./components/HomeSearch";
-import FetchDataTest from "./components/FetchDataTest";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
       </div>
       <HomeSearch />
       <About id='about'/>
-      <FetchDataTest />
+      <Testimonials />
     </BrowserRouter>
   );
 };

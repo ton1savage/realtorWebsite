@@ -197,7 +197,22 @@ const properties = [
     },
 ];
 
+const testimonials = [
+    {
+      name: "Alice Johnson",
+      testimonial: "Working with this team was a game-changer for our marketing strategy. Their expertise and creative approach helped us achieve a 40% increase in engagement within just three months. Highly recommend!"
+    },
+    {
+      name: "Bob Smith",
+      testimonial: "The level of professionalism and dedication displayed by this team was exceptional. They transformed our online presence and helped us secure several new clients. Fantastic results!"
+    },
+    {
+      name: "Carol Davis",
+      testimonial: "From start to finish, the experience was seamless. The team not only met but exceeded our expectations. The new website design has received rave reviews from both our clients and staff."
+    }
+  ];
 export { 
     navLinks,
-    properties
+    properties,
+    testimonials,
  };

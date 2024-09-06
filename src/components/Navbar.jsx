@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { navLinks } from '../constants'; // Adjust the path as necessary
-import { jjlogo, menu, close } from '../assets';
+import { bkjjlogo, menu, close } from '../assets';
 import { styles } from '../styles';
 import ConnectModal from './ConnectModal'; // Import ConnectModal component
 
@@ -44,14 +44,14 @@ const Navbar = () => {
         >
           {isScrolled && (
             <img
-              src={jjlogo}
+              src={bkjjlogo}
               alt='JJ Logo'
               className='logo'
               style={{ width: '45px', height: '45px' }}
             />
           )}
           <p className={`text-[20px] font-bold cursor-pointer ${isScrolled ? 'text-black' : 'text-white'}`}>
-            Jarred Johnson
+            James Johnson
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>

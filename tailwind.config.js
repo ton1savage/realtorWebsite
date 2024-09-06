@@ -33,6 +33,8 @@ module.exports = {
       },
       letterSpacing: {
         'custom': '2px',
+        'large': '3px',
+        'extralg': '5px',
       },
     },
   },

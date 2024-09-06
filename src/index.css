@@ -11,7 +11,6 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  
 }
 
 .hero-transition {
@@ -51,4 +50,8 @@
 
 .listing-specs {
   font-weight: 500;
+}
+
+.test-text {
+  font-size: '20px';
 }
