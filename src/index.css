@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Montserrat:wght@200;300;400;700&family=Nanum+Myeongjo&family=Noto+Sans:wght@400;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+.hero-transition {
+  transition: background-image 0.5s ease-in-out;
+  /* Adjust the duration and easing as needed */
+}
+
+.slide-right {
+  transform: translateX(0);
+  /* Initial position */
+  transition: transform 0.5s ease-in-out;
+  /* Transition property for smooth animation */
+}
+
+.slide-right.active {
+  transform: translateX(8px);
+  /* Move to the right */
+}
+
+.map-container {
+  width: 50%;
+  height: 100vh;
+}
+
+.listing-details {
+  color: black;
+}
+
+
+.listing-price {
+  font-weight: 700;
+}
+
+.listing-specs {
+  font-weight: 500;
+}
