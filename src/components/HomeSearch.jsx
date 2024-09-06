@@ -6,12 +6,12 @@ const HomeSearch = () => {
   const [properties, setProperties] = useState(null);  // State to hold properties
 
   return (
-    <div className="relative flex h-screen bg-white">
+    <div id='search' className="relative flex h-screen bg-white m-[10px]">
       {/* Pass properties as a prop to MyMapComp */}
       <MyMapComp className="flex-none w-1/2" properties={properties} />
       
       {/* Listing will fetch the data and set properties */}
-      <Listing className="flex-1" setProperties={setProperties} />
+      <Listing className="flex-1 " setProperties={setProperties} />
     </div>
   );
 };

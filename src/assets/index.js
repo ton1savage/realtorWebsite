@@ -4,6 +4,7 @@ import menu from './menu.svg';
 import close from './close.svg';
 import jjlogo from './jjlogo.svg';
 import bkjjlogo from './bkjjlogo.svg';
+import aboutPhoto from './aboutphoto.jpg'
 import photo1 from './herophotos/photo1.jpg';
 import photo2 from './herophotos/photo2.jpg';
 import photo4 from './herophotos/photo4.jpg';
@@ -28,6 +29,7 @@ export {
     close,
     jjlogo,
     bkjjlogo,
+    aboutPhoto,
     images,
     loading,
 };

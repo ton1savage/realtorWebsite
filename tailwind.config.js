@@ -31,6 +31,9 @@ module.exports = {
         'extrabold': 800,
         'black': 900,
       },
+      letterSpacing: {
+        'custom': '2px',
+      },
     },
   },
   plugins: [],

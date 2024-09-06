@@ -21,13 +21,21 @@ const Hero = () => {
       clearInterval(interval)
     };
   }, [backgroundImage, images])
+
+  const handleScrollToSearch = () => {
+    const searchElement = document.getElementById('search');
+    if (searchElement) {
+      searchElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div>
+    <div className='hero-details'>
       <div className='bg-fixed bg-cover bg-center h-[100vh] hero-transition' style={{ backgroundImage: `url(${backgroundImage})`, filter: 'brightness(0.5)' }}>
       </div>
       <div className='absolute top-0 left-0 centered-content flex flex-col justify-center items-center h-[100vh] w-[100%]'>
         <div className={`${styles.heroHeadText} flex p-[10px] items-center`}>
-          <span>Jarred</span>
+          <span>James</span>
           <img
             src={jjlogo}
             alt='JJ Logo'
@@ -37,7 +45,10 @@ const Hero = () => {
           <span>Johnson</span>
         </div>
         <div className='mt-[30px]  '>
-          <button className='border-2 border-solid-black py-[5px] px-[30px] hover:py-[7px] hover:px-[35px] hover:bg-white hover:text-black text-[18px] hover:text-[20px] transition-all duration-500 tracking-[3px]'>
+        <button
+            className='border-2 border-solid-black py-[5px] px-[30px] hover:py-[7px] hover:px-[35px] hover:bg-white hover:text-black text-[18px] hover:text-[20px] transition-all duration-500 tracking-[3px]'
+            onClick={handleScrollToSearch}
+          >
             FIND A HOME
           </button>
         </div>

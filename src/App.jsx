@@ -13,10 +13,10 @@ const App = () => {
         <Hero />
       </div>
       <HomeSearch />
-      <About />
+      <About id='about'/>
       <FetchDataTest />
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default App
