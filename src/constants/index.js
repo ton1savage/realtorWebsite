@@ -1,17 +1,21 @@
 const navLinks = [
     {
-        id: 'search',
-        title: 'HOME SEARCH'
+        id: 'home-search', // Changed ID to match the route path
+        title: 'HOME SEARCH',
+        path: '/home-search', // Path for routing
     },
     {
         id: 'about',
-        title: 'ABOUT'
+        title: 'ABOUT',
+        path: '/', // Default path to stay on the same page
     },
     {
         id: 'connect',
-        title: 'CONNECT'
+        title: 'CONNECT',
+        path: '#', // Use '#' to indicate an anchor link or modal action
     },
 ];
+
 const properties = [
     {
         photo: 'https://example.com/property.jpg',
@@ -199,20 +203,20 @@ const properties = [
 
 const testimonials = [
     {
-      name: "Alice Johnson",
-      testimonial: "Working with this team was a game-changer for our marketing strategy. Their expertise and creative approach helped us achieve a 40% increase in engagement within just three months. Highly recommend!"
+        name: "Alice Johnson",
+        testimonial: "Working with this team was a game-changer for our marketing strategy. Their expertise and creative approach helped us achieve a 40% increase in engagement within just three months. Highly recommend!"
     },
     {
-      name: "Bob Smith",
-      testimonial: "The level of professionalism and dedication displayed by this team was exceptional. They transformed our online presence and helped us secure several new clients. Fantastic results!"
+        name: "Bob Smith",
+        testimonial: "The level of professionalism and dedication displayed by this team was exceptional. They transformed our online presence and helped us secure several new clients. Fantastic results!"
     },
     {
-      name: "Carol Davis",
-      testimonial: "From start to finish, the experience was seamless. The team not only met but exceeded our expectations. The new website design has received rave reviews from both our clients and staff."
+        name: "Carol Davis",
+        testimonial: "From start to finish, the experience was seamless. The team not only met but exceeded our expectations. The new website design has received rave reviews from both our clients and staff."
     }
-  ];
-export { 
+];
+export {
     navLinks,
     properties,
     testimonials,
- };
+};

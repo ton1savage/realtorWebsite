@@ -66,7 +66,11 @@ const Navbar = () => {
                 }
               }}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              {link.path === '#' ? (
+                <a href={`#${link.id}`}>{link.title}</a>
+              ) : (
+                <Link to={link.path}>{link.title}</Link>
+              )}
             </li>
           ))}
         </ul>
@@ -93,7 +97,11 @@ const Navbar = () => {
                     }
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  {link.path === '#' ? (
+                    <a href={`#${link.id}`}>{link.title}</a>
+                  ) : (
+                    <Link to={link.path}>{link.title}</Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -107,6 +115,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 
