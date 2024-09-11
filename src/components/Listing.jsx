@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FetchApi } from '../utils/fetchAPI';
+import { Link } from 'react-router-dom';
 
 const Listing = ({ setProperties }) => {
   const [localProperties, setLocalProperties] = useState(null);
@@ -40,7 +41,7 @@ const Listing = ({ setProperties }) => {
               <img
                 src={property.coverPhoto.url}
                 alt={`Property at ${property.title}`}
-                className="w-full sm:h-[200px] md:h-[150px] lg:h-[250px]  rounded-lg object-cover"
+                className="w-full sm:h-[200px] md:h-[150px] lg:h-[250px] rounded-lg object-cover"
               />
             </div>
             <div className="listing-details">
@@ -48,7 +49,6 @@ const Listing = ({ setProperties }) => {
                 ${Math.round(property.price * .25)}
               </div>
               <div className="listing-specs text-sm mb-2 space-y-[10px]">
-
                 <div className='flex items-center gap-[12px]'>
                   <span>{property.rooms === 0 ? 'Studio' : (property.rooms + ' bd')}</span>
                 </div>
@@ -68,6 +68,12 @@ const Listing = ({ setProperties }) => {
                 </div>
               </div>
             </div>
+            <Link
+              to={`/property-details/${property.id}`}
+              state={{ property }} // Pass the property data through the state
+            >
+              View Details
+            </Link>
           </div>
         ))}
       </div>
@@ -76,6 +82,8 @@ const Listing = ({ setProperties }) => {
 };
 
 export default Listing;
+
+
 
 
 
