@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FetchApi } from '../utils/fetchAPI';
 import { Link } from 'react-router-dom';
+import millify from 'millify';
 
 const Listing = ({ setProperties }) => {
   const [localProperties, setLocalProperties] = useState(null);
@@ -46,9 +47,10 @@ const Listing = ({ setProperties }) => {
             </div>
             <div className="listing-details">
               <div className="listing-price text-lg font-extrabold mb-2">
-                ${Math.round(property.price * .25)}
+                ${millify(Math.round(property.price * .25))}/{property.rentFrequency}
               </div>
-              <div className="listing-specs text-sm mb-2 space-y-[10px]">
+              <div className="border-b-2 border-gray-500 w-80"></div>
+              <div className="listing-specs text-sm my-2 space-y-[10px]">
                 <div className='flex items-center gap-[12px]'>
                   <span>{property.rooms === 0 ? 'Studio' : (property.rooms + ' bd')}</span>
                 </div>
